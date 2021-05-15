@@ -170,15 +170,19 @@
                 <div class="dropdown__date-section">
                   <div class="dropdown__date-block dropdown__date-block_right-padding">
                     <h3 class="dropdown__title">date Dropdown</h3>
-                    <label class="dropdown__header dropdown__header_all-angles-are-round dropdown__start-date-header" for="uiDateDrop">
-                      <div class="dropdown__header-text dropdown_start-date">ДД.ММ.ГГГГ</div><i class="material-icons dropdown__expand-more dropdown__expand-more_absolute">keyboard_arrow_down</i>
-                    </label>
+                    <div class="dropdown__start-date-input" for="uiDateDrop">
+                      <div class="text-field">
+                        <input class="text-field__field text-field__field_masked" type="text" placeholder="ДД.ММ.ГГГГ">
+                      </div><i class="material-icons dropdown__date-arrow">keyboard_arrow_down</i>
+                    </div>
                   </div>
                   <div class="dropdown__date-block dropdown__date-block_left-padding">
                     <h3 class="dropdown__title">date Dropdown</h3>
-                    <label class="dropdown__header dropdown__header_all-angles-are-round dropdown__end-date-header" for="uiDateDrop">
-                      <div class="dropdown__header-text dropdown_end-date">ДД.ММ.ГГГГ</div><i class="material-icons dropdown__expand-more dropdown__expand-more_absolute">keyboard_arrow_down</i>
-                    </label>
+                    <div class="dropdown__end-date-input" for="uiDateDrop">
+                      <div class="text-field">
+                        <input class="text-field__field text-field__field_masked" type="text" placeholder="ДД.ММ.ГГГГ">
+                      </div><i class="material-icons dropdown__date-arrow">keyboard_arrow_down</i>
+                    </div>
                   </div>
                 </div>
                 <div class="dropdown__drop-menu">
@@ -520,110 +524,7 @@
       <h1 class="section__title">Cards</h1>
       <div class="cards">
         <div class="cards__column cards__column-one">
-          <div class="cards__block-wrapper">
-            <div class="search-room-card">
-              <form>
-                <h1 class="search-room-card__title search-room-card__title">Найдём номера под ваши пожелания</h1>
-                <div class="search-room-card__dropdown">
-                  <div class="dropdown dropdown_date">
-                    <input class="dropdown__check" type="checkbox" id="searchRoomDateDrop">
-                    <div class="dropdown__date-section">
-                      <div class="dropdown__date-block dropdown__date-block_right-padding">
-                        <h3 class="dropdown__title">прибытие</h3>
-                        <label class="dropdown__header dropdown__header_all-angles-are-round dropdown__start-date-header" for="searchRoomDateDrop">
-                          <div class="dropdown__header-text dropdown_start-date">ДД.ММ.ГГГГ</div><i class="material-icons dropdown__expand-more dropdown__expand-more_absolute">keyboard_arrow_down</i>
-                        </label>
-                      </div>
-                      <div class="dropdown__date-block dropdown__date-block_left-padding">
-                        <h3 class="dropdown__title">выезд</h3>
-                        <label class="dropdown__header dropdown__header_all-angles-are-round dropdown__end-date-header" for="searchRoomDateDrop">
-                          <div class="dropdown__header-text dropdown_end-date">ДД.ММ.ГГГГ</div><i class="material-icons dropdown__expand-more dropdown__expand-more_absolute">keyboard_arrow_down</i>
-                        </label>
-                      </div>
-                    </div>
-                    <div class="dropdown__drop-menu">
-                      <div class="calendar calendar_theme_default">
-                        <div class="calendar__month-selection-section"><i class="material-icons calendar__month-button calendar__month-button_theme_default calendar__month-button_with-back-arrow">arrow_back</i><span class="calendar__month-name">Сентябрь 1989</span><i class="material-icons calendar__month-button calendar__month-button_theme_default calendar__month-button_with-forward-arrow">arrow_forward</i></div>
-                        <div class="calendar__days-section">
-                          <div class="calendar__names-of-week-days-section calendar__names-of-week-days-section_theme_default"><span class="calendar__week-day">Пн</span><span class="calendar__week-day">Вт</span><span class="calendar__week-day">Ср</span><span class="calendar__week-day">Чт</span><span class="calendar__week-day">Пт</span><span class="calendar__week-day">Сб</span><span class="calendar__week-day">Вс</span>
-                          </div>
-                          <div class="calendar__week-section"><span class="calendar__day calendar__day-number_other-month">28</span><span class="calendar__day calendar__day-number_other-month">29</span><span class="calendar__day calendar__day-number_other-month">30</span><span class="calendar__day calendar__day-number_other-month">31</span><span class="calendar__day">1</span><span class="calendar__day">2</span><span class="calendar__day">3</span>
-                          </div>
-                          <div class="calendar__week-section"><span class="calendar__day">4</span><span class="calendar__day">5</span><span class="calendar__day calendar__day_current">6</span><span class="calendar__day">7</span><span class="calendar__day">8</span><span class="calendar__day">9</span><span class="calendar__day">10</span>
-                          </div>
-                          <div class="calendar__week-section"><span class="calendar__day">11</span><span class="calendar__day">12</span><span class="calendar__day">13</span><span class="calendar__day">14</span><span class="calendar__day">15</span><span class="calendar__day">16</span><span class="calendar__day">17</span>
-                          </div>
-                          <div class="calendar__week-section"><span class="calendar__day">18</span><span class="calendar__day">19</span><span class="calendar__day">20</span><span class="calendar__day">21</span><span class="calendar__day">22</span><span class="calendar__day">23</span><span class="calendar__day">24</span>
-                          </div>
-                          <div class="calendar__week-section"><span class="calendar__day">25</span><span class="calendar__day">26</span><span class="calendar__day">27</span><span class="calendar__day">28</span><span class="calendar__day">29</span><span class="calendar__day">30</span><span class="calendar__day calendar__day_other-month">1</span>
-                          </div>
-                        </div>
-                        <div class="calendar__buttons-panel">
-                          <div class="calendar__button-clear">
-                            <button class="button button_only-text button_only-text_theme_purple" type="button" value="очистить">очистить
-                            </button>
-                          </div>
-                          <div class="calendar__button-apply">
-                            <button class="button button_only-text button_only-text_theme_purple" type="button" value="применить">применить
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="search-room-card__dropdown">
-                  <div class="dropdown dropdown_guests">
-                    <input class="dropdown__check" type="checkbox" id="searchRoomGuestsDrop">
-                    <h3 class="dropdown__title">гости</h3>
-                    <label class="dropdown__header dropdown__header_all-angles-are-round" for="searchRoomGuestsDrop">
-                      <div class="dropdown__header-text">Сколько гостей</div><i class="material-icons dropdown__expand-more">keyboard_arrow_down</i>
-                    </label>
-                    <div class="dropdown__drop-menu dropdown__drop-menu_with-border">
-                      <div class="dropdown__option">
-                        <div class="dropdown__option-title">взрослые</div>
-                        <div class="dropdown__quantity-selection">
-                          <button class="dropdown__quantity-button dropdown__quantity-button_subtract" type="button" disabled="disabled">-</button>
-                          <div class="dropdown__quantity-number">0</div>
-                          <button class="dropdown__quantity-button dropdown__quantity-button_add" type="button">+</button>
-                        </div>
-                      </div>
-                      <div class="dropdown__option">
-                        <div class="dropdown__option-title">дети</div>
-                        <div class="dropdown__quantity-selection">
-                          <button class="dropdown__quantity-button dropdown__quantity-button_subtract" type="button" disabled="disabled">-</button>
-                          <div class="dropdown__quantity-number">0</div>
-                          <button class="dropdown__quantity-button dropdown__quantity-button_add" type="button">+</button>
-                        </div>
-                      </div>
-                      <div class="dropdown__option">
-                        <div class="dropdown__option-title">младенцы</div>
-                        <div class="dropdown__quantity-selection">
-                          <button class="dropdown__quantity-button dropdown__quantity-button_subtract" type="button" disabled="disabled">-</button>
-                          <div class="dropdown__quantity-number">0</div>
-                          <button class="dropdown__quantity-button dropdown__quantity-button_add" type="button">+</button>
-                        </div>
-                      </div>
-                      <div class="dropdown__bottom-buttons-panel">
-                        <div class="dropdown__button-clear">
-                          <button class="button button_only-text button_only-text_theme_purple" type="button" value="очистить">очистить
-                          </button>
-                        </div>
-                        <div class="dropdown__button-apply">
-                          <button class="button button_only-text button_only-text_theme_purple" type="button" value="применить">применить
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="search-room-card__button">
-                  <button class="button button_with-arrow" type="button" value="подобрать номер">подобрать номер<i class="material-icons button__arrow">arrow_forward</i>
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
+          <div class="cards__block-wrapper"></div>
           <div class="cards__block-wrapper">
             <div class="registration-card">
               <form>
@@ -677,139 +578,7 @@
           </div>
         </div>
         <div class="cards__column cards__column-two">
-          <div class="cards__block-wrapper">
-            <div class="room-rate-card">
-              <form>
-                <div class="room-rate-card__room-info">
-                  <div class="room-rate-card__room-number">
-                    <div class="room-rate-card__number">№&#32</div>
-                    <div class="room-rate-card__number room-rate-card__number_size-l">888&#32</div>
-                    <div class="room-rate-card__lux">ЛЮКС</div>
-                  </div>
-                  <div class="room-rate-card__price-per-day"> 
-                    <div class="room-rate-card__cost">9 990₽&#32</div>
-                    <div class="room-rate-card__room-rate-label">в сутки</div>
-                  </div>
-                </div>
-                <div class="dropdown dropdown_date">
-                  <input class="dropdown__check" type="checkbox" id="roomRateDateDrop">
-                  <div class="dropdown__date-section">
-                    <div class="dropdown__date-block dropdown__date-block_right-padding">
-                      <h3 class="dropdown__title">прибытие</h3>
-                      <label class="dropdown__header dropdown__header_all-angles-are-round dropdown__start-date-header" for="roomRateDateDrop">
-                        <div class="dropdown__header-text dropdown_start-date">ДД.ММ.ГГГГ</div><i class="material-icons dropdown__expand-more dropdown__expand-more_absolute">keyboard_arrow_down</i>
-                      </label>
-                    </div>
-                    <div class="dropdown__date-block dropdown__date-block_left-padding">
-                      <h3 class="dropdown__title">выезд</h3>
-                      <label class="dropdown__header dropdown__header_all-angles-are-round dropdown__end-date-header" for="roomRateDateDrop">
-                        <div class="dropdown__header-text dropdown_end-date">ДД.ММ.ГГГГ</div><i class="material-icons dropdown__expand-more dropdown__expand-more_absolute">keyboard_arrow_down</i>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="dropdown__drop-menu">
-                    <div class="calendar calendar_theme_default">
-                      <div class="calendar__month-selection-section"><i class="material-icons calendar__month-button calendar__month-button_theme_default calendar__month-button_with-back-arrow">arrow_back</i><span class="calendar__month-name">Сентябрь 1989</span><i class="material-icons calendar__month-button calendar__month-button_theme_default calendar__month-button_with-forward-arrow">arrow_forward</i></div>
-                      <div class="calendar__days-section">
-                        <div class="calendar__names-of-week-days-section calendar__names-of-week-days-section_theme_default"><span class="calendar__week-day">Пн</span><span class="calendar__week-day">Вт</span><span class="calendar__week-day">Ср</span><span class="calendar__week-day">Чт</span><span class="calendar__week-day">Пт</span><span class="calendar__week-day">Сб</span><span class="calendar__week-day">Вс</span>
-                        </div>
-                        <div class="calendar__week-section"><span class="calendar__day calendar__day-number_other-month">28</span><span class="calendar__day calendar__day-number_other-month">29</span><span class="calendar__day calendar__day-number_other-month">30</span><span class="calendar__day calendar__day-number_other-month">31</span><span class="calendar__day">1</span><span class="calendar__day">2</span><span class="calendar__day">3</span>
-                        </div>
-                        <div class="calendar__week-section"><span class="calendar__day">4</span><span class="calendar__day">5</span><span class="calendar__day calendar__day_current">6</span><span class="calendar__day">7</span><span class="calendar__day">8</span><span class="calendar__day">9</span><span class="calendar__day">10</span>
-                        </div>
-                        <div class="calendar__week-section"><span class="calendar__day">11</span><span class="calendar__day">12</span><span class="calendar__day">13</span><span class="calendar__day">14</span><span class="calendar__day">15</span><span class="calendar__day">16</span><span class="calendar__day">17</span>
-                        </div>
-                        <div class="calendar__week-section"><span class="calendar__day">18</span><span class="calendar__day">19</span><span class="calendar__day">20</span><span class="calendar__day">21</span><span class="calendar__day">22</span><span class="calendar__day">23</span><span class="calendar__day">24</span>
-                        </div>
-                        <div class="calendar__week-section"><span class="calendar__day">25</span><span class="calendar__day">26</span><span class="calendar__day">27</span><span class="calendar__day">28</span><span class="calendar__day">29</span><span class="calendar__day">30</span><span class="calendar__day calendar__day_other-month">1</span>
-                        </div>
-                      </div>
-                      <div class="calendar__buttons-panel">
-                        <div class="calendar__button-clear">
-                          <button class="button button_only-text button_only-text_theme_purple" type="button" value="очистить">очистить
-                          </button>
-                        </div>
-                        <div class="calendar__button-apply">
-                          <button class="button button_only-text button_only-text_theme_purple" type="button" value="применить">применить
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="room-rate-card__drop-guests">
-                  <div class="dropdown dropdown_guests">
-                    <input class="dropdown__check" type="checkbox" id="roomRateDrop">
-                    <h3 class="dropdown__title">гости</h3>
-                    <label class="dropdown__header dropdown__header_all-angles-are-round" for="roomRateDrop">
-                      <div class="dropdown__header-text">Сколько гостей</div><i class="material-icons dropdown__expand-more">keyboard_arrow_down</i>
-                    </label>
-                    <div class="dropdown__drop-menu dropdown__drop-menu_with-border">
-                      <div class="dropdown__option">
-                        <div class="dropdown__option-title">взрослые</div>
-                        <div class="dropdown__quantity-selection">
-                          <button class="dropdown__quantity-button dropdown__quantity-button_subtract" type="button" disabled="disabled">-</button>
-                          <div class="dropdown__quantity-number">0</div>
-                          <button class="dropdown__quantity-button dropdown__quantity-button_add" type="button">+</button>
-                        </div>
-                      </div>
-                      <div class="dropdown__option">
-                        <div class="dropdown__option-title">дети</div>
-                        <div class="dropdown__quantity-selection">
-                          <button class="dropdown__quantity-button dropdown__quantity-button_subtract" type="button" disabled="disabled">-</button>
-                          <div class="dropdown__quantity-number">0</div>
-                          <button class="dropdown__quantity-button dropdown__quantity-button_add" type="button">+</button>
-                        </div>
-                      </div>
-                      <div class="dropdown__option">
-                        <div class="dropdown__option-title">младенцы</div>
-                        <div class="dropdown__quantity-selection">
-                          <button class="dropdown__quantity-button dropdown__quantity-button_subtract" type="button" disabled="disabled">-</button>
-                          <div class="dropdown__quantity-number">0</div>
-                          <button class="dropdown__quantity-button dropdown__quantity-button_add" type="button">+</button>
-                        </div>
-                      </div>
-                      <div class="dropdown__bottom-buttons-panel">
-                        <div class="dropdown__button-clear">
-                          <button class="button button_only-text button_only-text_theme_purple" type="button" value="очистить">очистить
-                          </button>
-                        </div>
-                        <div class="dropdown__button-apply">
-                          <button class="button button_only-text button_only-text_theme_purple" type="button" value="применить">применить
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="room-rate-card__room-rate-calc">
-                  <div class="room-rate-card__daily-calc">9990</div>
-                  <div class="room-rate-card__room-rate">0₽</div>
-                </div>
-                <div class="room-rate-card__services">
-                  <div class="room-rate-card__service-info">
-                    <div class="room-rate-card__services-label">Сбор за услуги</div>
-                    <div class="room-rate-card__service-tooltip"><span class="room-rate-card__tooltip" tooltip="Суммарная стоимость выбранных услуг">i</span></div>
-                  </div>
-                  <div class="room-rate-card__total-services-cost">-2179₽</div>
-                </div>
-                <div class="room-rate-card__additional-services">
-                  <div class="room-rate-card__additional-service-info">
-                    <div class="room-rate-card__additional-services-label">Сбор за дополнительные услуги:</div>
-                    <div class="room-rate-card__additional-service-tooltip"><span class="room-rate-card__tooltip" tooltip="Суммарная стоимость выбранных дополнительных услуг">i</span></div>
-                  </div>
-                  <div class="room-rate-card__total-services-additional-cost">300</div>
-                </div>
-                <div class="room-rate-card__result">
-                  <div class="room-rate-card__result-label">Итого</div>
-                  <div class="room-rate-card__result-dots"></div>
-                  <div class="room-rate-card__result-cost">0₽</div>
-                </div>
-                <button class="button button_with-arrow" type="button" value="забронировать">забронировать<i class="material-icons button__arrow">arrow_forward</i>
-                </button>
-              </form>
-            </div>
-          </div>
+          <div class="cards__block-wrapper"></div>
           <div class="cards__block-wrapper">
             <div class="entry-card">
               <form>
@@ -1056,5 +825,5 @@
         </div>
       </footer>
     </section>
-  <script src="../../main.a33a98159dd7156fa397.js"></script></body>
+  <script src="../../index.js"></script></body>
 </html>
