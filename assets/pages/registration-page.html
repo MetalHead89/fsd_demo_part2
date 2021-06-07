@@ -16,7 +16,7 @@
               <ul class="navbar__list navbar__list_horizontal">
                 <li class="navbar__item navbar__item_horizontal">О нас</li>
                 <li class="navbar__item navbar__item_horizontal">
-                  <div class="navbar__dropdown-title navbar__dropdown-title_horizontal"><span>Услуги</span><i class="material-icons navbar__expand-more-button">expand_more</i></div>
+                  <div class="navbar__dropdown-title navbar__dropdown-title_horizontal"><span>Услуги</span><i class="navbar__expand-more-button">expand_more</i></div>
                   <ul class="navbar__hidden-list navbar__hidden-list_horizontal">
                     <li class="navbar__hidden-list-item navbar__hidden-list-item_horizontal">Обслуживание номеров</li>
                     <li class="navbar__hidden-list-item navbar__hidden-list-item_horizontal">Парковка</li>
@@ -29,7 +29,7 @@
                 <li class="navbar__item navbar__item_horizontal">Вакансии</li>
                 <li class="navbar__item navbar__item_horizontal">Новости</li>
                 <li class="navbar__item navbar__item_horizontal">
-                  <div class="navbar__dropdown-title navbar__dropdown-title_horizontal"><span>Соглашения</span><i class="material-icons navbar__expand-more-button">expand_more</i></div>
+                  <div class="navbar__dropdown-title navbar__dropdown-title_horizontal"><span>Соглашения</span><i class="navbar__expand-more-button">expand_more</i></div>
                   <ul class="navbar__hidden-list navbar__hidden-list_horizontal">
                     <li class="navbar__hidden-list-item navbar__hidden-list-item_horizontal">Правила проживания</li>
                     <li class="navbar__hidden-list-item navbar__hidden-list-item_horizontal">Бонусная программа</li>
@@ -40,13 +40,17 @@
                   <div class="navbar__separator navbar__separator_horizontal"></div>
                 </li>
                 <li class="navbar__item navbar__item_horizontal navbar__item_with-name">Виталий Бакалов</li>
-                <li class="navbar__button-entry-container navbar__item navbar__item_horizontal">
-                  <button class="button button_with-border button_paddings_s" type="button" value="войти">войти
-                  </button>
+                <li class="navbar__item navbar__item_horizontal">
+                  <div class="navbar__button-entry-container">
+                    <button class="button button_with-border button_paddings_s" type="button" value="войти">войти
+                    </button>
+                  </div>
                 </li>
-                <li class="navbar__button-registration-container navbar__item navbar__item_horizontal">
-                  <button class="button button_regular button_paddings_l" type="button" value="зарегистрироваться">зарегистрироваться
-                  </button>
+                <li class="navbar__item navbar__item_horizontal">
+                  <navbar__button-registration-container>
+                    <button class="button button_regular button_paddings_l" type="button" value="зарегистрироваться">зарегистрироваться
+                    </button>
+                  </navbar__button-registration-container>
                 </li>
               </ul></nav>
               <label class="header__burger" for="header">
@@ -57,7 +61,7 @@
           <ul class="navbar__list navbar__list_vertical">
             <li class="navbar__item navbar__item_vertical">О нас</li>
             <li class="navbar__item navbar__item_vertical">
-              <div class="navbar__dropdown-title navbar__dropdown-title_vertical"><span>Услуги</span><i class="material-icons navbar__expand-more-button">expand_more</i></div>
+              <div class="navbar__dropdown-title navbar__dropdown-title_vertical"><span>Услуги</span><i class="navbar__expand-more-button">expand_more</i></div>
               <ul class="navbar__hidden-list navbar__hidden-list_vertical">
                 <li class="navbar__hidden-list-item navbar__hidden-list-item_vertical">Обслуживание номеров</li>
                 <li class="navbar__hidden-list-item navbar__hidden-list-item_vertical">Парковка</li>
@@ -70,7 +74,7 @@
             <li class="navbar__item navbar__item_vertical">Вакансии</li>
             <li class="navbar__item navbar__item_vertical">Новости</li>
             <li class="navbar__item navbar__item_vertical">
-              <div class="navbar__dropdown-title navbar__dropdown-title_vertical"><span>Соглашения</span><i class="material-icons navbar__expand-more-button">expand_more</i></div>
+              <div class="navbar__dropdown-title navbar__dropdown-title_vertical"><span>Соглашения</span><i class="navbar__expand-more-button">expand_more</i></div>
               <ul class="navbar__hidden-list navbar__hidden-list_vertical">
                 <li class="navbar__hidden-list-item navbar__hidden-list-item_vertical">Правила проживания</li>
                 <li class="navbar__hidden-list-item navbar__hidden-list-item_vertical">Бонусная программа</li>
@@ -81,13 +85,17 @@
               <div class="navbar__separator navbar__separator_vertical"></div>
             </li>
             <li class="navbar__item navbar__item_vertical navbar__item_with-name">Виталий Бакалов</li>
-            <li class="navbar__button-entry-container navbar__item navbar__item_vertical">
-              <button class="button button_with-border button_paddings_s" type="button" value="войти">войти
-              </button>
+            <li class="navbar__item navbar__item_vertical">
+              <div class="navbar__button-entry-container">
+                <button class="button button_with-border button_paddings_s" type="button" value="войти">войти
+                </button>
+              </div>
             </li>
-            <li class="navbar__button-registration-container navbar__item navbar__item_vertical">
-              <button class="button button_regular button_paddings_l" type="button" value="зарегистрироваться">зарегистрироваться
-              </button>
+            <li class="navbar__item navbar__item_vertical">
+              <navbar__button-registration-container>
+                <button class="button button_regular button_paddings_l" type="button" value="зарегистрироваться">зарегистрироваться
+                </button>
+              </navbar__button-registration-container>
             </li>
           </ul></nav>
         </header>
@@ -103,20 +111,26 @@
                   <form>
                     <h1 class="registration-card__title">Регистрация аккаунта</h1>
                     <div class="registration-card__person">
-                      <div class="text-field">
-                        <input class="text-field__field" type="text" placeholder="Имя">
+                      <div class="registration-card__text-field-wrapper">
+                        <div class="text-field">
+                          <input class="text-field__field" type="text" placeholder="Имя">
+                        </div>
                       </div>
-                      <div class="text-field">
-                        <input class="text-field__field" type="text" placeholder="Фамилия">
+                      <div class="registration-card__text-field-wrapper">
+                        <div class="text-field">
+                          <input class="text-field__field" type="text" placeholder="Фамилия">
+                        </div>
                       </div>
                       <div class="radio-button">
                         <div class="radio-button__radio-section">
-                          <input class="radio-button__radio-element" type="radio" id="radioMale" name="radioGender" value="male" checked="checked">
-                          <label class="radio-button__label" for="radioMale">Мужчина</label>
+                          <label class="radio-button__label">Мужчина
+                            <input class="radio-button__radio-element" type="radio" name="radioGender" value="male" checked="checked">
+                          </label>
                         </div>
                         <div class="radio-button__radio-section">
-                          <input class="radio-button__radio-element" type="radio" id="radioFemale" name="radioGender" value="female">
-                          <label class="radio-button__label" for="radioFemale">Женщина</label>
+                          <label class="radio-button__label">Женщина
+                            <input class="radio-button__radio-element" type="radio" name="radioGender" value="female">
+                          </label>
                         </div>
                       </div>
                     </div>
@@ -125,24 +139,29 @@
                       <input class="text-field__field text-field__field_masked" type="text" placeholder="ДД.ММ.ГГГГ">
                     </div>
                     <div class="registration-card__login-details">
-                      <div class="text-field">
-                        <h3 class="text-field__title">Данные для входа в сервис</h3>
-                        <input class="text-field__field" type="email" placeholder="Email">
+                      <div class="registration-card__text-field-wrapper">
+                        <div class="text-field">
+                          <h3 class="text-field__title">Данные для входа в сервис</h3>
+                          <input class="text-field__field" type="email" placeholder="Email">
+                        </div>
                       </div>
-                      <div class="text-field">
-                        <input class="text-field__field" type="password" placeholder="Пароль">
+                      <div class="registration-card__text-field-wrapper">
+                        <div class="text-field">
+                          <input class="text-field__field" type="password" placeholder="Пароль">
+                        </div>
                       </div>
                       <div class="toggle">
-                        <input class="toggle__checkbox" type="checkbox" name="toggleSpecialOffers" id="toggleSpecialOffers">
-                        <label class="toggle__label" for="toggleSpecialOffers">Получать спецпредложения</label>
+                        <label class="toggle__label">Получать спецпредложения
+                          <input class="toggle__checkbox" type="checkbox" name="toggleSpecialOffers">
+                        </label>
                       </div>
                     </div>
-                    <button class="button button_with-arrow" type="button" value="перейти к оплате">перейти к оплате<i class="material-icons button__arrow">arrow_forward</i>
+                    <button class="button button_with-arrow" type="button" value="перейти к оплате">перейти к оплате<i class="button__arrow">arrow_forward</i>
                     </button>
                     <div class="registration-card__account-login">
                       <div class="registration-card__login-label">Уже есть аккаунт на Toxin</div>
                       <div class="registration-card__login-button">
-                        <button class="button button_with-border" type="button" value="войти">войти
+                        <button class="button button_with-border button_horizontal-paddings-size_l" type="button" value="войти">войти
                         </button>
                       </div>
                     </div>
@@ -187,7 +206,7 @@
                 <li class="footer__info-item">
                   <div class="text-field">
                     <input class="text-field__field text-field__field_paddings_l" type="email" placeholder="Email">
-                    <button class="text-field__subscription-btn" type="button"><span class="material-icons text-field__arrow-forward">arrow_forward</span></button>
+                    <button class="text-field__subscription-button" type="button"><span class="text-field__arrow-forward">arrow_forward</span></button>
                   </div>
                 </li>
               </ul>
