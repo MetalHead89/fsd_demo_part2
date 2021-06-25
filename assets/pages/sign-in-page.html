@@ -9,14 +9,13 @@
   <body>
     <div class="site-container">
       <section class="header-section">
-        <header class="header">
+        <header class="header js-header">
           <div class="header__container">
-            <div class="header__content"><a href="#"><img class="header__logo" src="../images/logo.svg" alt="logo"></a>
-              <input class="header__menu-check" id="header" type="checkbox" name="header"><nav class="navbar">
-              <ul class="navbar__list navbar__list_horizontal">
-                <li class="navbar__item navbar__item_horizontal">О нас</li>
-                <li class="navbar__item navbar__item_horizontal">
-                  <div class="navbar__dropdown-title navbar__dropdown-title_horizontal"><span>Услуги</span><i class="navbar__expand-more-button">expand_more</i></div>
+            <div class="header__content"><a href="#"><img class="header__logo" src="../images/logo.svg" alt="logo"></a><nav class="navbar">
+              <ul class="navbar__list navbar__list_horizontal js-navbar__list_horizontal">
+                <li class="navbar__item navbar__item_horizontal js-navbar__item_horizontal">О нас</li>
+                <li class="navbar__item navbar__item_horizontal js-navbar__item_horizontal">
+                  <div class="navbar__dropdown-title navbar__dropdown-title_horizontal js-navbar__dropdown-title_horizontal"><span>Услуги</span><i class="navbar__expand-more-button">expand_more</i></div>
                   <ul class="navbar__hidden-list navbar__hidden-list_horizontal">
                     <li class="navbar__hidden-list-item navbar__hidden-list-item_horizontal">Обслуживание номеров</li>
                     <li class="navbar__hidden-list-item navbar__hidden-list-item_horizontal">Парковка</li>
@@ -26,42 +25,42 @@
                     <li class="navbar__hidden-list-item navbar__hidden-list-item_horizontal">Питание</li>
                   </ul>
                 </li>
-                <li class="navbar__item navbar__item_horizontal">Вакансии</li>
-                <li class="navbar__item navbar__item_horizontal">Новости</li>
-                <li class="navbar__item navbar__item_horizontal">
-                  <div class="navbar__dropdown-title navbar__dropdown-title_horizontal"><span>Соглашения</span><i class="navbar__expand-more-button">expand_more</i></div>
+                <li class="navbar__item navbar__item_horizontal js-navbar__item_horizontal">Вакансии</li>
+                <li class="navbar__item navbar__item_horizontal js-navbar__item_horizontal">Новости</li>
+                <li class="navbar__item navbar__item_horizontal js-navbar__item_horizontal">
+                  <div class="navbar__dropdown-title navbar__dropdown-title_horizontal js-navbar__dropdown-title_horizontal"><span>Соглашения</span><i class="navbar__expand-more-button">expand_more</i></div>
                   <ul class="navbar__hidden-list navbar__hidden-list_horizontal">
                     <li class="navbar__hidden-list-item navbar__hidden-list-item_horizontal">Правила проживания</li>
                     <li class="navbar__hidden-list-item navbar__hidden-list-item_horizontal">Бонусная программа</li>
                     <li class="navbar__hidden-list-item navbar__hidden-list-item_horizontal">Политика конфиденциальности</li>
                   </ul>
                 </li>
-                <li class="navbar__item navbar__item_horizontal navbar__item_with-separator">
+                <li class="navbar__item navbar__item_horizontal js-navbar__item_horizontal navbar__item_with-separator js-navbar__item_with-separator">
                   <div class="navbar__separator navbar__separator_horizontal"></div>
                 </li>
-                <li class="navbar__item navbar__item_horizontal navbar__item_with-name">Виталий Бакалов</li>
-                <li class="navbar__item navbar__item_horizontal">
-                  <div class="navbar__button-entry-container">
+                <li class="navbar__item navbar__item_horizontal js-navbar__item_horizontal navbar__item_with-name js-navbar__item_with-name">Виталий Бакалов</li>
+                <li class="navbar__item navbar__item_horizontal js-navbar__item_horizontal">
+                  <div class="js-navbar__button-entry-container">
                     <button class="button button_with-border button_paddings_s" type="button" value="войти">войти
                     </button>
                   </div>
                 </li>
-                <li class="navbar__item navbar__item_horizontal">
-                  <navbar__button-registration-container>
+                <li class="navbar__item navbar__item_horizontal js-navbar__item_horizontal">
+                  <div class="js-navbar__button-registration-container">
                     <button class="button button_regular button_paddings_l" type="button" value="зарегистрироваться">зарегистрироваться
                     </button>
-                  </navbar__button-registration-container>
+                  </div>
                 </li>
               </ul></nav>
-              <label class="header__burger" for="header">
+              <label class="header__burger js-header__burger">
                 <div class="header__burger-image"></div>
               </label>
             </div>
           </div><nav class="navbar">
-          <ul class="navbar__list navbar__list_vertical">
-            <li class="navbar__item navbar__item_vertical">О нас</li>
-            <li class="navbar__item navbar__item_vertical">
-              <div class="navbar__dropdown-title navbar__dropdown-title_vertical"><span>Услуги</span><i class="navbar__expand-more-button">expand_more</i></div>
+          <ul class="navbar__list navbar__list_vertical js-navbar__list_vertical">
+            <li class="navbar__item navbar__item_vertical js-navbar__item_vertical">О нас</li>
+            <li class="navbar__item navbar__item_vertical js-navbar__item_vertical">
+              <div class="navbar__dropdown-title navbar__dropdown-title_vertical js-navbar__dropdown-title_vertical"><span>Услуги</span><i class="navbar__expand-more-button">expand_more</i></div>
               <ul class="navbar__hidden-list navbar__hidden-list_vertical">
                 <li class="navbar__hidden-list-item navbar__hidden-list-item_vertical">Обслуживание номеров</li>
                 <li class="navbar__hidden-list-item navbar__hidden-list-item_vertical">Парковка</li>
@@ -71,31 +70,31 @@
                 <li class="navbar__hidden-list-item navbar__hidden-list-item_vertical">Питание</li>
               </ul>
             </li>
-            <li class="navbar__item navbar__item_vertical">Вакансии</li>
-            <li class="navbar__item navbar__item_vertical">Новости</li>
-            <li class="navbar__item navbar__item_vertical">
-              <div class="navbar__dropdown-title navbar__dropdown-title_vertical"><span>Соглашения</span><i class="navbar__expand-more-button">expand_more</i></div>
+            <li class="navbar__item navbar__item_vertical js-navbar__item_vertical">Вакансии</li>
+            <li class="navbar__item navbar__item_vertical js-navbar__item_vertical">Новости</li>
+            <li class="navbar__item navbar__item_vertical js-navbar__item_vertical">
+              <div class="navbar__dropdown-title navbar__dropdown-title_vertical js-navbar__dropdown-title_vertical"><span>Соглашения</span><i class="navbar__expand-more-button">expand_more</i></div>
               <ul class="navbar__hidden-list navbar__hidden-list_vertical">
                 <li class="navbar__hidden-list-item navbar__hidden-list-item_vertical">Правила проживания</li>
                 <li class="navbar__hidden-list-item navbar__hidden-list-item_vertical">Бонусная программа</li>
                 <li class="navbar__hidden-list-item navbar__hidden-list-item_vertical">Политика конфиденциальности</li>
               </ul>
             </li>
-            <li class="navbar__item navbar__item_vertical navbar__item_with-separator">
+            <li class="navbar__item navbar__item_vertical js-navbar__item_vertical navbar__item_with-separator js-navbar__item_with-separator">
               <div class="navbar__separator navbar__separator_vertical"></div>
             </li>
-            <li class="navbar__item navbar__item_vertical navbar__item_with-name">Виталий Бакалов</li>
-            <li class="navbar__item navbar__item_vertical">
-              <div class="navbar__button-entry-container">
+            <li class="navbar__item navbar__item_vertical js-navbar__item_vertical navbar__item_with-name js-navbar__item_with-name">Виталий Бакалов</li>
+            <li class="navbar__item navbar__item_vertical js-navbar__item_vertical">
+              <div class="js-navbar__button-entry-container">
                 <button class="button button_with-border button_paddings_s" type="button" value="войти">войти
                 </button>
               </div>
             </li>
-            <li class="navbar__item navbar__item_vertical">
-              <navbar__button-registration-container>
+            <li class="navbar__item navbar__item_vertical js-navbar__item_vertical">
+              <div class="js-navbar__button-registration-container">
                 <button class="button button_regular button_paddings_l" type="button" value="зарегистрироваться">зарегистрироваться
                 </button>
-              </navbar__button-registration-container>
+              </div>
             </li>
           </ul></nav>
         </header>
@@ -113,12 +112,12 @@
                     <div class="entry-card__login-section">
                       <div class="entry-card__text-field-wrapper">
                         <div class="text-field">
-                          <input class="text-field__field" type="email" placeholder="Email">
+                          <input class="text-field__field js-text-field__field" type="email" placeholder="Email">
                         </div>
                       </div>
                       <div class="entry-card__text-field-wrapper">
                         <div class="text-field">
-                          <input class="text-field__field" type="password" placeholder="Пароль">
+                          <input class="text-field__field js-text-field__field" type="password" placeholder="Пароль">
                         </div>
                       </div>
                     </div>
@@ -171,7 +170,7 @@
                 <li class="footer__info-item">Получайте специальные предложения и новости сервиса</li>
                 <li class="footer__info-item">
                   <div class="text-field">
-                    <input class="text-field__field text-field__field_paddings_l" type="email" placeholder="Email">
+                    <input class="text-field__field js-text-field__field text-field__field_paddings_l" type="email" placeholder="Email">
                     <button class="text-field__subscription-button" type="button"><span class="text-field__arrow-forward">arrow_forward</span></button>
                   </div>
                 </li>
@@ -188,5 +187,5 @@
         </footer>
       </section>
     </div>
-  <script src="../../index.js"></script></body>
+  <script src="../../1.index.js"></script><script src="../../index.js"></script></body>
 </html>
