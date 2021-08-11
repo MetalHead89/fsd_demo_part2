@@ -121,13 +121,13 @@
                 <div class="search-room__filter-options">
                   <div class="search-room__option-column-one">
                     <div class="search-room__filter-date-container">
-                      <div class="dropdown js-dropdown dropdown_filter-date">
-                        <input class="dropdown__check js-dropdown__check" type="checkbox">
-                        <h3 class="dropdown__title">даты пребывания в отеле</h3>
-                        <label class="dropdown__header dropdown__header_all-angles-are-round js-dropdown__header">
-                          <div class="dropdown__header-text js-dropdown__header-text">Выберите период</div><i class="dropdown__expand-more">keyboard_arrow_down</i>
+                      <div class="filter-date-dropdown js-filter-date-dropdown">
+                        <input class="filter-date-dropdown__check js-filter-date-dropdown__check" type="checkbox">
+                        <h3 class="filter-date-dropdown__title">даты пребывания в отеле</h3>
+                        <label class="filter-date-dropdown__header filter-date-dropdown__header_all-angles-are-round js-filter-date-dropdown__header">
+                          <div class="filter-date-dropdown__header-text js-filter-date-dropdown__header-text">Выберите период</div><i class="filter-date-dropdown__expand-more">keyboard_arrow_down</i>
                         </label>
-                        <div class="dropdown__drop-menu js-dropdown__drop-menu">
+                        <div class="filter-date-dropdown__drop-menu js-filter-date-dropdown__drop-menu">
                           <div class="calendar js-calendar calendar_without-top-border">
                             <div class="calendar__month-selection-section"><i class="calendar__month-button calendar__month-button_with-back-arrow js-calendar__month-button_with-back-arrow">arrow_back</i><span class="calendar__month-name js-calendar__month-name">Сентябрь 1989</span><i class="calendar__month-button calendar__month-button_with-forward-arrow js-calendar__month-button_with-forward-arrow">arrow_forward</i></div>
                             <div class="calendar__days-section js-calendar__days-section">
@@ -159,43 +159,43 @@
                       </div>
                     </div>
                     <div class="search-room__guests-dropdown-container">
-                      <div class="dropdown js-dropdown dropdown_guests">
-                        <input class="dropdown__check js-dropdown__check" type="checkbox">
-                        <h3 class="dropdown__title">гости</h3>
-                        <label class="dropdown__header dropdown__header_all-angles-are-round js-dropdown__header">
-                          <div class="dropdown__header-text js-dropdown__header-text">Сколько гостей</div><i class="dropdown__expand-more">keyboard_arrow_down</i>
+                      <div class="guests-dropdown js-guests-dropdown">
+                        <input class="guests-dropdown__check js-guests-dropdown__check" type="checkbox">
+                        <h3 class="guests-dropdown__title">гости</h3>
+                        <label class="guests-dropdown__header js-guests-dropdown__header">
+                          <div class="guests-dropdown__header-text js-guests-dropdown__header-text">Сколько гостей</div><i class="guests-dropdown__expand-more">keyboard_arrow_down</i>
                         </label>
-                        <div class="dropdown__drop-menu dropdown__drop-menu_with-border js-dropdown__drop-menu">
-                          <div class="dropdown__option">
-                            <div class="dropdown__option-title">взрослые</div>
-                            <div class="dropdown__quantity-selection">
-                              <button class="dropdown__quantity-button dropdown__quantity-button_subtract js-dropdown__quantity-button" type="button" disabled="disabled">-</button>
-                              <div class="dropdown__quantity-number js-dropdown__quantity-number">0</div>
-                              <button class="dropdown__quantity-button dropdown__quantity-button_add js-dropdown__quantity-button" type="button">+</button>
+                        <div class="guests-dropdown__drop-menu js-guests-dropdown__drop-menu">
+                          <div class="guests-dropdown__option">
+                            <div class="guests-dropdown__option-title">взрослые</div>
+                            <div class="guests-dropdown__quantity-selection">
+                              <button class="guests-dropdown__quantity-button guests-dropdown__quantity-button_subtract js-guests-dropdown__quantity-button" type="button" disabled="disabled">-</button>
+                              <div class="guests-dropdown__quantity-number js-guests-dropdown__quantity-number">0</div>
+                              <button class="guests-dropdown__quantity-button guests-dropdown__quantity-button_add js-guests-dropdown__quantity-button" type="button">+</button>
                             </div>
                           </div>
-                          <div class="dropdown__option">
-                            <div class="dropdown__option-title">дети</div>
-                            <div class="dropdown__quantity-selection">
-                              <button class="dropdown__quantity-button dropdown__quantity-button_subtract js-dropdown__quantity-button" type="button" disabled="disabled">-</button>
-                              <div class="dropdown__quantity-number js-dropdown__quantity-number">0</div>
-                              <button class="dropdown__quantity-button dropdown__quantity-button_add js-dropdown__quantity-button" type="button">+</button>
+                          <div class="guests-dropdown__option">
+                            <div class="guests-dropdown__option-title">дети</div>
+                            <div class="guests-dropdown__quantity-selection">
+                              <button class="guests-dropdown__quantity-button guests-dropdown__quantity-button_subtract js-guests-dropdown__quantity-button" type="button" disabled="disabled">-</button>
+                              <div class="guests-dropdown__quantity-number js-guests-dropdown__quantity-number">0</div>
+                              <button class="guests-dropdown__quantity-button guests-dropdown__quantity-button_add js-guests-dropdown__quantity-button" type="button">+</button>
                             </div>
                           </div>
-                          <div class="dropdown__option">
-                            <div class="dropdown__option-title">младенцы</div>
-                            <div class="dropdown__quantity-selection">
-                              <button class="dropdown__quantity-button dropdown__quantity-button_subtract js-dropdown__quantity-button" type="button" disabled="disabled">-</button>
-                              <div class="dropdown__quantity-number js-dropdown__quantity-number">0</div>
-                              <button class="dropdown__quantity-button dropdown__quantity-button_add js-dropdown__quantity-button" type="button">+</button>
+                          <div class="guests-dropdown__option">
+                            <div class="guests-dropdown__option-title">младенцы</div>
+                            <div class="guests-dropdown__quantity-selection">
+                              <button class="guests-dropdown__quantity-button guests-dropdown__quantity-button_subtract js-guests-dropdown__quantity-button" type="button" disabled="disabled">-</button>
+                              <div class="guests-dropdown__quantity-number js-guests-dropdown__quantity-number">0</div>
+                              <button class="guests-dropdown__quantity-button guests-dropdown__quantity-button_add js-guests-dropdown__quantity-button" type="button">+</button>
                             </div>
                           </div>
-                          <div class="dropdown__bottom-buttons-panel">
-                            <div class="dropdown__button-clear dropdown__button-clear_hidden js-dropdown__button-clear">
+                          <div class="guests-dropdown__bottom-buttons-panel">
+                            <div class="guests-dropdown__button-clear guests-dropdown__button-clear_hidden js-guests-dropdown__button-clear">
                               <button class="button button_only-text" type="button" value="очистить">очистить
                               </button>
                             </div>
-                            <div class="js-dropdown__button-apply">
+                            <div class="js-guests-dropdown__button-apply">
                               <button class="button button_only-text" type="button" value="применить">применить
                               </button>
                             </div>
@@ -265,35 +265,35 @@
                       </div>
                     </div>
                     <div class="search-room__comfort-dropdown-container">
-                      <div class="dropdown js-dropdown dropdown_comfort">
-                        <input class="dropdown__check js-dropdown__check" type="checkbox">
-                        <h3 class="dropdown__title">удобства номера</h3>
-                        <label class="dropdown__header dropdown__header_top-angles-are-round js-dropdown__header">
-                          <div class="dropdown__header-text js-dropdown__header-text">Выберите удобства</div><i class="dropdown__expand-more">keyboard_arrow_down</i>
+                      <div class="comfort-dropdown js-comfort-dropdown">
+                        <input class="comfort-dropdown__check js-comfort-dropdown__check" type="checkbox">
+                        <h3 class="comfort-dropdown__title">удобства номера</h3>
+                        <label class="comfort-dropdown__header js-comfort-dropdown__header">
+                          <div class="comfort-dropdown__header-text js-comfort-dropdown__header-text">Выберите удобства</div><i class="comfort-dropdown__expand-more">keyboard_arrow_down</i>
                         </label>
-                        <div class="dropdown__drop-menu dropdown__drop-menu_with-border js-dropdown__drop-menu">
-                          <div class="dropdown__option">
-                            <div class="dropdown__option-title">спальни</div>
-                            <div class="dropdown__quantity-selection">
-                              <button class="dropdown__quantity-button dropdown__quantity-button_subtract js-dropdown__quantity-button" type="button" disabled="disabled">-</button>
-                              <div class="dropdown__quantity-number js-dropdown__quantity-number">0</div>
-                              <button class="dropdown__quantity-button dropdown__quantity-button_add js-dropdown__quantity-button" type="button">+</button>
+                        <div class="comfort-dropdown__drop-menu js-comfort-dropdown__drop-menu">
+                          <div class="comfort-dropdown__option">
+                            <div class="comfort-dropdown__option-title">спальни</div>
+                            <div class="comfort-dropdown__quantity-selection">
+                              <button class="comfort-dropdown__quantity-button comfort-dropdown__quantity-button_subtract js-comfort-dropdown__quantity-button" type="button" disabled="disabled">-</button>
+                              <div class="comfort-dropdown__quantity-number js-comfort-dropdown__quantity-number">0</div>
+                              <button class="comfort-dropdown__quantity-button comfort-dropdown__quantity-button_add js-comfort-dropdown__quantity-button" type="button">+</button>
                             </div>
                           </div>
-                          <div class="dropdown__option">
-                            <div class="dropdown__option-title">кровати</div>
-                            <div class="dropdown__quantity-selection">
-                              <button class="dropdown__quantity-button dropdown__quantity-button_subtract js-dropdown__quantity-button" type="button" disabled="disabled">-</button>
-                              <div class="dropdown__quantity-number js-dropdown__quantity-number">0</div>
-                              <button class="dropdown__quantity-button dropdown__quantity-button_add js-dropdown__quantity-button" type="button">+</button>
+                          <div class="comfort-dropdown__option">
+                            <div class="comfort-dropdown__option-title">кровати</div>
+                            <div class="comfort-dropdown__quantity-selection">
+                              <button class="comfort-dropdown__quantity-button comfort-dropdown__quantity-button_subtract js-comfort-dropdown__quantity-button" type="button" disabled="disabled">-</button>
+                              <div class="comfort-dropdown__quantity-number js-comfort-dropdown__quantity-number">0</div>
+                              <button class="comfort-dropdown__quantity-button comfort-dropdown__quantity-button_add js-comfort-dropdown__quantity-button" type="button">+</button>
                             </div>
                           </div>
-                          <div class="dropdown__option">
-                            <div class="dropdown__option-title">ванные комнаты</div>
-                            <div class="dropdown__quantity-selection">
-                              <button class="dropdown__quantity-button dropdown__quantity-button_subtract js-dropdown__quantity-button" type="button" disabled="disabled">-</button>
-                              <div class="dropdown__quantity-number js-dropdown__quantity-number">0</div>
-                              <button class="dropdown__quantity-button dropdown__quantity-button_add js-dropdown__quantity-button" type="button">+</button>
+                          <div class="comfort-dropdown__option">
+                            <div class="comfort-dropdown__option-title">ванные комнаты</div>
+                            <div class="comfort-dropdown__quantity-selection">
+                              <button class="comfort-dropdown__quantity-button comfort-dropdown__quantity-button_subtract js-comfort-dropdown__quantity-button" type="button" disabled="disabled">-</button>
+                              <div class="comfort-dropdown__quantity-number js-comfort-dropdown__quantity-number">0</div>
+                              <button class="comfort-dropdown__quantity-button comfort-dropdown__quantity-button_add js-comfort-dropdown__quantity-button" type="button">+</button>
                             </div>
                           </div>
                         </div>
