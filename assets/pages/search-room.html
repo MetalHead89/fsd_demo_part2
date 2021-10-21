@@ -44,12 +44,12 @@
                   <li class="navbar__item js-navbar__item navbar__item_type_name js-navbar__item_type_name">Виталий Бакалов</li>
                   <li class="navbar__item js-navbar__item">
                     <div class="navbar__button-entry-container js-navbar__button-entry-container">
-                      <button class="button button_theme_bordered button_size_small" type="button" value="войти">войти</button>
+                      <a class="button button_theme_bordered button_size_small" href="./sign-in-page.html" type="button" value="войти">войти</a>
                     </div>
                   </li>
                   <li class="navbar__item js-navbar__item">
                     <div class="navbar__button-registration-container js-navbar__button-registration-container">
-                      <button class="button button_theme_filled button_size_small" type="button" value="зарегистрироваться">зарегистрироваться</button>
+                      <a class="button button_theme_filled button_size_small" href="./registration-page.html" type="button" value="зарегистрироваться">зарегистрироваться</a>
                     </div>
                   </li>
                 </ul>
@@ -60,7 +60,7 @@
             </div>
           </div>
           <div class="header__hidden-navbar js-header__hidden-navbar">     
-            <nav class="navbar js-navbar navbar_vertical js-navbar_vertical">
+            <nav class="navbar js-navbar navbar_theme_vertical js-navbar_theme_vertical">
               <ul class="navbar__list js-navbar__list">
                 <li class="navbar__item js-navbar__item">О нас</li>
                 <li class="navbar__item js-navbar__item">
@@ -92,12 +92,12 @@
                 <li class="navbar__item js-navbar__item navbar__item_type_name js-navbar__item_type_name">Виталий Бакалов</li>
                 <li class="navbar__item js-navbar__item">
                   <div class="navbar__button-entry-container js-navbar__button-entry-container">
-                    <button class="button button_theme_bordered button_size_small" type="button" value="войти">войти</button>
+                    <a class="button button_theme_bordered button_size_small" href="./sign-in-page.html" type="button" value="войти">войти</a>
                   </div>
                 </li>
                 <li class="navbar__item js-navbar__item">
                   <div class="navbar__button-registration-container js-navbar__button-registration-container">
-                    <button class="button button_theme_filled button_size_small" type="button" value="зарегистрироваться">зарегистрироваться</button>
+                    <a class="button button_theme_filled button_size_small" href="./registration-page.html" type="button" value="зарегистрироваться">зарегистрироваться</a>
                   </div>
                 </li>
               </ul>
@@ -162,25 +162,25 @@
                             <div class="counting-menu__option">
                               <div class="counting-menu__option-title">взрослые</div>
                               <div class="counting-menu__quantity-buttons-group">
-                                <button class="counting-menu__quantity-button counting-menu__quantity-button_subtract js-counting-menu__quantity-button" type="button" disabled="disabled">-</button>
+                                <button class="counting-menu__quantity-button js-counting-menu__quantity-button" type="button" disabled="disabled">-</button>
                                 <div class="counting-menu__quantity-number js-counting-menu__quantity-number">0</div>
-                                <button class="counting-menu__quantity-button counting-menu__quantity-button_add js-counting-menu__quantity-button" type="button">+</button>
+                                <button class="counting-menu__quantity-button counting-menu__quantity-button_type_addition js-counting-menu__quantity-button" type="button">+</button>
                               </div>
                             </div>
                             <div class="counting-menu__option">
                               <div class="counting-menu__option-title">дети</div>
                               <div class="counting-menu__quantity-buttons-group">
-                                <button class="counting-menu__quantity-button counting-menu__quantity-button_subtract js-counting-menu__quantity-button" type="button" disabled="disabled">-</button>
+                                <button class="counting-menu__quantity-button js-counting-menu__quantity-button" type="button" disabled="disabled">-</button>
                                 <div class="counting-menu__quantity-number js-counting-menu__quantity-number">0</div>
-                                <button class="counting-menu__quantity-button counting-menu__quantity-button_add js-counting-menu__quantity-button" type="button">+</button>
+                                <button class="counting-menu__quantity-button counting-menu__quantity-button_type_addition js-counting-menu__quantity-button" type="button">+</button>
                               </div>
                             </div>
                             <div class="counting-menu__option">
                               <div class="counting-menu__option-title">младенцы</div>
                               <div class="counting-menu__quantity-buttons-group">
-                                <button class="counting-menu__quantity-button counting-menu__quantity-button_subtract js-counting-menu__quantity-button" type="button" disabled="disabled">-</button>
+                                <button class="counting-menu__quantity-button js-counting-menu__quantity-button" type="button" disabled="disabled">-</button>
                                 <div class="counting-menu__quantity-number js-counting-menu__quantity-number">0</div>
-                                <button class="counting-menu__quantity-button counting-menu__quantity-button_add js-counting-menu__quantity-button" type="button">+</button>
+                                <button class="counting-menu__quantity-button counting-menu__quantity-button_type_addition js-counting-menu__quantity-button" type="button">+</button>
                               </div>
                             </div>
                           </div>
@@ -201,8 +201,8 @@
                           <h3 class="range-slider__title">диапазон цены</h3>
                           <div class="range-slider__range-label js-range-slider__range-label"></div>
                         </div>
-                        <input class="range-slider__input js-range-slider__input_left" type="range" min="0" max="15000" value="5000">
-                        <input class="range-slider__input js-range-slider__input_right" type="range" min="0" max="15000" value="10000">
+                        <input class="range-slider__input js-range-slider__input_type_left" type="range" min="0" max="15000" value="5000">
+                        <input class="range-slider__input js-range-slider__input_type_right" type="range" min="0" max="15000" value="10000">
                         <div class="range-slider__slider">
                           <div class="range-slider__track"></div>
                           <div class="range-slider__range js-range-slider__range"></div>
@@ -267,25 +267,25 @@
                             <div class="counting-menu__option">
                               <div class="counting-menu__option-title">спальни</div>
                               <div class="counting-menu__quantity-buttons-group">
-                                <button class="counting-menu__quantity-button counting-menu__quantity-button_subtract js-counting-menu__quantity-button" type="button" disabled="disabled">-</button>
+                                <button class="counting-menu__quantity-button js-counting-menu__quantity-button" type="button" disabled="disabled">-</button>
                                 <div class="counting-menu__quantity-number js-counting-menu__quantity-number">0</div>
-                                <button class="counting-menu__quantity-button counting-menu__quantity-button_add js-counting-menu__quantity-button" type="button">+</button>
+                                <button class="counting-menu__quantity-button counting-menu__quantity-button_type_addition js-counting-menu__quantity-button" type="button">+</button>
                               </div>
                             </div>
                             <div class="counting-menu__option">
                               <div class="counting-menu__option-title">кровати</div>
                               <div class="counting-menu__quantity-buttons-group">
-                                <button class="counting-menu__quantity-button counting-menu__quantity-button_subtract js-counting-menu__quantity-button" type="button" disabled="disabled">-</button>
+                                <button class="counting-menu__quantity-button js-counting-menu__quantity-button" type="button" disabled="disabled">-</button>
                                 <div class="counting-menu__quantity-number js-counting-menu__quantity-number">0</div>
-                                <button class="counting-menu__quantity-button counting-menu__quantity-button_add js-counting-menu__quantity-button" type="button">+</button>
+                                <button class="counting-menu__quantity-button counting-menu__quantity-button_type_addition js-counting-menu__quantity-button" type="button">+</button>
                               </div>
                             </div>
                             <div class="counting-menu__option">
                               <div class="counting-menu__option-title">ванные комнаты</div>
                               <div class="counting-menu__quantity-buttons-group">
-                                <button class="counting-menu__quantity-button counting-menu__quantity-button_subtract js-counting-menu__quantity-button" type="button" disabled="disabled">-</button>
+                                <button class="counting-menu__quantity-button js-counting-menu__quantity-button" type="button" disabled="disabled">-</button>
                                 <div class="counting-menu__quantity-number js-counting-menu__quantity-number">0</div>
-                                <button class="counting-menu__quantity-button counting-menu__quantity-button_add js-counting-menu__quantity-button" type="button">+</button>
+                                <button class="counting-menu__quantity-button counting-menu__quantity-button_type_addition js-counting-menu__quantity-button" type="button">+</button>
                               </div>
                             </div>
                           </div>
@@ -356,7 +356,7 @@
                     <div class="room-card js-room-card">
                       <div class="room-card__slider-section">
                         <ul class="room-card__slider-list">
-                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_opaque js-room-card__slider-list-item_opaque"><img class="room-card__slider-image" src="../images/room1.png" alt="room-image"></li>
+                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_theme_opaque js-room-card__slider-list-item_theme_opaque"><img class="room-card__slider-image" src="../images/room1.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room6.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room10.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room7.png" alt="room-image"></li>
@@ -389,7 +389,7 @@
                     <div class="room-card js-room-card">
                       <div class="room-card__slider-section">
                         <ul class="room-card__slider-list">
-                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_opaque js-room-card__slider-list-item_opaque"><img class="room-card__slider-image" src="../images/room2.png" alt="room-image"></li>
+                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_theme_opaque js-room-card__slider-list-item_theme_opaque"><img class="room-card__slider-image" src="../images/room2.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room9.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room3.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room6.png" alt="room-image"></li>
@@ -422,7 +422,7 @@
                     <div class="room-card js-room-card">
                       <div class="room-card__slider-section">
                         <ul class="room-card__slider-list">
-                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_opaque js-room-card__slider-list-item_opaque"><img class="room-card__slider-image" src="../images/room3.png" alt="room-image"></li>
+                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_theme_opaque js-room-card__slider-list-item_theme_opaque"><img class="room-card__slider-image" src="../images/room3.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room10.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room1.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room5.png" alt="room-image"></li>
@@ -455,7 +455,7 @@
                     <div class="room-card js-room-card">
                       <div class="room-card__slider-section">
                         <ul class="room-card__slider-list">
-                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_opaque js-room-card__slider-list-item_opaque"><img class="room-card__slider-image" src="../images/room4.png" alt="room-image"></li>
+                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_theme_opaque js-room-card__slider-list-item_theme_opaque"><img class="room-card__slider-image" src="../images/room4.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room8.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room9.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room2.png" alt="room-image"></li>
@@ -488,7 +488,7 @@
                     <div class="room-card js-room-card">
                       <div class="room-card__slider-section">
                         <ul class="room-card__slider-list">
-                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_opaque js-room-card__slider-list-item_opaque"><img class="room-card__slider-image" src="../images/room5.png" alt="room-image"></li>
+                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_theme_opaque js-room-card__slider-list-item_theme_opaque"><img class="room-card__slider-image" src="../images/room5.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room3.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room2.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room9.png" alt="room-image"></li>
@@ -521,7 +521,7 @@
                     <div class="room-card js-room-card">
                       <div class="room-card__slider-section">
                         <ul class="room-card__slider-list">
-                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_opaque js-room-card__slider-list-item_opaque"><img class="room-card__slider-image" src="../images/room6.png" alt="room-image"></li>
+                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_theme_opaque js-room-card__slider-list-item_theme_opaque"><img class="room-card__slider-image" src="../images/room6.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room10.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room8.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room7.png" alt="room-image"></li>
@@ -554,7 +554,7 @@
                     <div class="room-card js-room-card">
                       <div class="room-card__slider-section">
                         <ul class="room-card__slider-list">
-                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_opaque js-room-card__slider-list-item_opaque"><img class="room-card__slider-image" src="../images/room7.png" alt="room-image"></li>
+                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_theme_opaque js-room-card__slider-list-item_theme_opaque"><img class="room-card__slider-image" src="../images/room7.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room6.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room8.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room10.png" alt="room-image"></li>
@@ -587,7 +587,7 @@
                     <div class="room-card js-room-card">
                       <div class="room-card__slider-section">
                         <ul class="room-card__slider-list">
-                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_opaque js-room-card__slider-list-item_opaque"><img class="room-card__slider-image" src="../images/room8.png" alt="room-image"></li>
+                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_theme_opaque js-room-card__slider-list-item_theme_opaque"><img class="room-card__slider-image" src="../images/room8.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room1.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room3.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room9.png" alt="room-image"></li>
@@ -620,7 +620,7 @@
                     <div class="room-card js-room-card">
                       <div class="room-card__slider-section">
                         <ul class="room-card__slider-list">
-                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_opaque js-room-card__slider-list-item_opaque"><img class="room-card__slider-image" src="../images/room9.png" alt="room-image"></li>
+                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_theme_opaque js-room-card__slider-list-item_theme_opaque"><img class="room-card__slider-image" src="../images/room9.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room2.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room10.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room4.png" alt="room-image"></li>
@@ -653,7 +653,7 @@
                     <div class="room-card js-room-card">
                       <div class="room-card__slider-section">
                         <ul class="room-card__slider-list">
-                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_opaque js-room-card__slider-list-item_opaque"><img class="room-card__slider-image" src="../images/room10.png" alt="room-image"></li>
+                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_theme_opaque js-room-card__slider-list-item_theme_opaque"><img class="room-card__slider-image" src="../images/room10.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room7.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room9.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room3.png" alt="room-image"></li>
@@ -686,7 +686,7 @@
                     <div class="room-card js-room-card">
                       <div class="room-card__slider-section">
                         <ul class="room-card__slider-list">
-                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_opaque js-room-card__slider-list-item_opaque"><img class="room-card__slider-image" src="../images/room11.png" alt="room-image"></li>
+                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_theme_opaque js-room-card__slider-list-item_theme_opaque"><img class="room-card__slider-image" src="../images/room11.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room6.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room7.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room5.png" alt="room-image"></li>
@@ -719,7 +719,7 @@
                     <div class="room-card js-room-card">
                       <div class="room-card__slider-section">
                         <ul class="room-card__slider-list">
-                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_opaque js-room-card__slider-list-item_opaque"><img class="room-card__slider-image" src="../images/room12.png" alt="room-image"></li>
+                          <li class="room-card__slider-list-item js-room-card__slider-list-item room-card__slider-list-item_theme_opaque js-room-card__slider-list-item_theme_opaque"><img class="room-card__slider-image" src="../images/room12.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room2.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room3.png" alt="room-image"></li>
                           <li class="room-card__slider-list-item js-room-card__slider-list-item"><img class="room-card__slider-image" src="../images/room5.png" alt="room-image"></li>
@@ -757,7 +757,7 @@
                       <li class="pagination__button pagination__button_theme_numerical js-pagination__button_theme_numerical"><a class="pagination__link" href="#">3</a></li>
                       <li class="pagination__button">...</li>
                       <li class="pagination__button pagination__button_theme_numerical js-pagination__button_theme_numerical"><a class="pagination__link" href="#">15</a></li>
-                      <li class="pagination__button pagination__button_theme_movement js-pagination__button_with-next-arrow"><a class="pagination__link" href="#"><i class="pagination__arrow">arrow_forward</i></a></li>
+                      <li class="pagination__button pagination__button_theme_movement js-pagination__button_theme_next"><a class="pagination__link" href="#"><i class="pagination__arrow">arrow_forward</i></a></li>
                     </ul><span class="pagination__signature pagination__signature_offset_top js-pagination__signature">1 – 12 из 100+ вариантов аренды</span>
                   </nav>
                 </div>

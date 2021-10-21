@@ -44,12 +44,12 @@
                   <li class="navbar__item js-navbar__item navbar__item_type_name js-navbar__item_type_name">Виталий Бакалов</li>
                   <li class="navbar__item js-navbar__item">
                     <div class="navbar__button-entry-container js-navbar__button-entry-container">
-                      <button class="button button_theme_bordered button_size_small" type="button" value="войти">войти</button>
+                      <a class="button button_theme_bordered button_size_small" href="./sign-in-page.html" type="button" value="войти">войти</a>
                     </div>
                   </li>
                   <li class="navbar__item js-navbar__item">
                     <div class="navbar__button-registration-container js-navbar__button-registration-container">
-                      <button class="button button_theme_filled button_size_small" type="button" value="зарегистрироваться">зарегистрироваться</button>
+                      <a class="button button_theme_filled button_size_small" href="./registration-page.html" type="button" value="зарегистрироваться">зарегистрироваться</a>
                     </div>
                   </li>
                 </ul>
@@ -60,7 +60,7 @@
             </div>
           </div>
           <div class="header__hidden-navbar js-header__hidden-navbar">     
-            <nav class="navbar js-navbar navbar_vertical js-navbar_vertical">
+            <nav class="navbar js-navbar navbar_theme_vertical js-navbar_theme_vertical">
               <ul class="navbar__list js-navbar__list">
                 <li class="navbar__item js-navbar__item">О нас</li>
                 <li class="navbar__item js-navbar__item">
@@ -92,12 +92,12 @@
                 <li class="navbar__item js-navbar__item navbar__item_type_name js-navbar__item_type_name">Виталий Бакалов</li>
                 <li class="navbar__item js-navbar__item">
                   <div class="navbar__button-entry-container js-navbar__button-entry-container">
-                    <button class="button button_theme_bordered button_size_small" type="button" value="войти">войти</button>
+                    <a class="button button_theme_bordered button_size_small" href="./sign-in-page.html" type="button" value="войти">войти</a>
                   </div>
                 </li>
                 <li class="navbar__item js-navbar__item">
                   <div class="navbar__button-registration-container js-navbar__button-registration-container">
-                    <button class="button button_theme_filled button_size_small" type="button" value="зарегистрироваться">зарегистрироваться</button>
+                    <a class="button button_theme_filled button_size_small" href="./registration-page.html" type="button" value="зарегистрироваться">зарегистрироваться</a>
                   </div>
                 </li>
               </ul>
@@ -108,9 +108,9 @@
       <section class="content-section">
         <article>
           <div class="landing-page">
-            <div class="landing-page__background landing-page__background_image-one"></div>
-            <div class="landing-page__background landing-page__background_image-two"></div>
-            <div class="landing-page__background landing-page__background_image-three"></div>
+            <div class="landing-page__background landing-page__background_image_first"></div>
+            <div class="landing-page__background landing-page__background_image_second"></div>
+            <div class="landing-page__background landing-page__background_image_third"></div>
             <div class="landing-page__content-container">
               <div class="landing-page__card-container">
                 <div class="search-room-card">
@@ -119,7 +119,7 @@
                     <div class="search-room-card__dropdown">
                       <div class="date-dropdown js-date-dropdown">
                         <div class="date-dropdown__date-section">
-                          <div class="date-dropdown__date-block date-dropdown__date-block_right-padding">
+                          <div class="date-dropdown__date-block">
                             <h3 class="date-dropdown__title">прибытие</h3>
                             <div class="date-dropdown__input js-date-dropdown__input">
                               <div class="text-field">
@@ -127,7 +127,7 @@
                               </div><i class="date-dropdown__date-arrow">keyboard_arrow_down</i>
                             </div>
                           </div>
-                          <div class="date-dropdown__date-block date-dropdown__date-block_left-padding">
+                          <div class="date-dropdown__date-block">
                             <h3 class="date-dropdown__title">выезд</h3>
                             <div class="date-dropdown__input js-date-dropdown__input">
                               <div class="text-field">
@@ -176,25 +176,25 @@
                             <div class="counting-menu__option">
                               <div class="counting-menu__option-title">взрослые</div>
                               <div class="counting-menu__quantity-buttons-group">
-                                <button class="counting-menu__quantity-button counting-menu__quantity-button_subtract js-counting-menu__quantity-button" type="button" disabled="disabled">-</button>
+                                <button class="counting-menu__quantity-button js-counting-menu__quantity-button" type="button" disabled="disabled">-</button>
                                 <div class="counting-menu__quantity-number js-counting-menu__quantity-number">0</div>
-                                <button class="counting-menu__quantity-button counting-menu__quantity-button_add js-counting-menu__quantity-button" type="button">+</button>
+                                <button class="counting-menu__quantity-button counting-menu__quantity-button_type_addition js-counting-menu__quantity-button" type="button">+</button>
                               </div>
                             </div>
                             <div class="counting-menu__option">
                               <div class="counting-menu__option-title">дети</div>
                               <div class="counting-menu__quantity-buttons-group">
-                                <button class="counting-menu__quantity-button counting-menu__quantity-button_subtract js-counting-menu__quantity-button" type="button" disabled="disabled">-</button>
+                                <button class="counting-menu__quantity-button js-counting-menu__quantity-button" type="button" disabled="disabled">-</button>
                                 <div class="counting-menu__quantity-number js-counting-menu__quantity-number">0</div>
-                                <button class="counting-menu__quantity-button counting-menu__quantity-button_add js-counting-menu__quantity-button" type="button">+</button>
+                                <button class="counting-menu__quantity-button counting-menu__quantity-button_type_addition js-counting-menu__quantity-button" type="button">+</button>
                               </div>
                             </div>
                             <div class="counting-menu__option">
                               <div class="counting-menu__option-title">младенцы</div>
                               <div class="counting-menu__quantity-buttons-group">
-                                <button class="counting-menu__quantity-button counting-menu__quantity-button_subtract js-counting-menu__quantity-button" type="button" disabled="disabled">-</button>
+                                <button class="counting-menu__quantity-button js-counting-menu__quantity-button" type="button" disabled="disabled">-</button>
                                 <div class="counting-menu__quantity-number js-counting-menu__quantity-number">0</div>
-                                <button class="counting-menu__quantity-button counting-menu__quantity-button_add js-counting-menu__quantity-button" type="button">+</button>
+                                <button class="counting-menu__quantity-button counting-menu__quantity-button_type_addition js-counting-menu__quantity-button" type="button">+</button>
                               </div>
                             </div>
                           </div>
